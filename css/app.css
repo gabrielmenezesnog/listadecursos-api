@@ -1,0 +1,105 @@
+#cursosList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 120px;
+}
+
+.curso {
+  max-width: min-content;
+  grid-template-areas: "image name";
+  text-align: left;
+}
+
+.curso a {
+  text-decoration: none;
+  color: #111;
+}
+
+.curso h4 {
+  grid-area: name;
+  margin-bottom: 0px;
+}
+
+.curso h4 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.curso h4::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 12px;
+  background: #ffbb22;
+}
+
+.curso a:hover h4::before {
+  width: 12px;
+  transition: all 0.3s;
+}
+
+.curso img {
+  max-width: 200px;
+  grid-area: image;
+}
+
+#searchWrapper {
+  margin-bottom: 60px;
+}
+
+#searchWrapper label {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+#searchBar {
+  background: #ededed;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  width: 35%;
+}
+
+@media (max-width: 600px) {
+  #cursosList {
+    gap: 20px;
+  }
+  .curso h4 {
+    place-items: start;
+    grid-area: name;
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+  }
+
+  .curso h4::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: #ffbb22;
+  }
+  
+  .curso a:hover h4::before {
+    width: 12px;
+    transition: all 0.3s;
+  }
+
+  .curso img {
+    max-width: 130px;
+    grid-area: image;
+  }
+
+  #searchBar {
+    background: #ededed;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: 100%;
+  }
+  
+}

@@ -1,0 +1,50 @@
+body {
+  margin: 0px;
+  background: #fff;
+  color: #111;
+  font: 500 .8rem/1.5 "Poppins", sans-serif;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote,
+dd {
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img[src$=".jpg"],
+img[src$=".png"] {
+  border-radius: 4px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
