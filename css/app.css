@@ -1,4 +1,5 @@
 #cursosList {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -62,10 +63,10 @@
   border: none;
   border-radius: 4px;
   padding: 12px 24px;
-  width: 35%;
+  width: 450px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   #cursosList {
     gap: 20px;
   }
@@ -83,14 +84,14 @@
     height: 7px;
     background: #ffbb22;
   }
-  
+
   .curso a:hover h4::before {
     width: 12px;
     transition: all 0.3s;
   }
 
   .curso img {
-    max-width: 130px;
+    max-width: 180px;
     grid-area: image;
   }
 
@@ -101,5 +102,25 @@
     padding: 12px 24px;
     width: 100%;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .curso img {
+    max-width: 160px;
+    grid-area: image;
+  }
+}
+
+@media (max-width: 380px) {
+  .curso img {
+    max-width: 130px;
+    grid-area: image;
+  }
+}
+
+@media (max-width: 320px) {
+  .curso img {
+    max-width: 110px;
+    grid-area: image;
+  }
 }
