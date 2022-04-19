@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Administração",
-    "link": "/psicologia",
+    "link": "/conteudo/curso",
     "image": "https://guiadecursos.vercel.app/recursos/img/administracao.jpg"
   },
   {
@@ -373,7 +373,7 @@
   },
   {
     "id": 63,
-    "name": "Ciências Sociais",
+    "name": "Psicologia",
     "link": "https://guiadecursos.vercel.app",
     "image": "https://guiadecursos.vercel.app/recursos/img/psicologia.png"
   },
